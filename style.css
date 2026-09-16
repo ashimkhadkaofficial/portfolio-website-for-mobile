@@ -1,0 +1,1362 @@
+/* =========================================================
+   GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   SCROLL BAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+
+
+/* =========================================================
+   DESKTOP MENU
+========================================================= */
+
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+  color: #4070f4;
+}
+
+nav.sticky .menu a {
+  color: #fff;
+}
+
+nav.sticky .menu a:hover {
+  color: #0E2431;
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA
+========================================================= */
+
+.navbar .media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .media-icons a {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+  transition: 0.3s ease;
+}
+
+.navbar .media-icons a:hover {
+  transform: translateY(-2px);
+}
+
+nav.sticky .media-icons a {
+  color: #fff;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+========================================================= */
+
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+nav .menu-btn {
+  color: #4070f4;
+}
+
+nav.sticky .menu-btn {
+  color: #fff;
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.home {
+  height: 100vh;
+  width: 100%;
+
+  background: url("background.png") no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .text-one {
+  font-size: 25px;
+  color: #0E2431;
+}
+
+.home .text-two {
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #0E2431;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.home .button {
+  margin: 14px 0;
+}
+
+.home .button button {
+  outline: none;
+
+  padding: 8px 16px;
+
+  border-radius: 6px;
+
+  font-size: 25px;
+
+  font-weight: 400;
+
+  background: #4070f4;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+
+  transition: all 0.4s ease;
+}
+
+.home .button button:hover {
+  border-color: #4070f4;
+
+  background-color: #fff;
+
+  color: #4070f4;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+section {
+  padding-top: 40px;
+}
+
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: #0E2431;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  position: relative;
+
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: '';
+
+  position: absolute;
+
+  height: 3px;
+
+  width: 100%;
+
+  background: #4070f4;
+
+  left: 0;
+
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7px;
+
+  width: 70%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about .about-details {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.about .about-details .left {
+  width: 45%;
+}
+
+.about .left img {
+  height: 400px;
+
+  width: 400px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.about-details .right {
+  width: 55%;
+}
+
+section .topic {
+  color: #0E2431;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+
+  color: #0E2431;
+
+  margin-bottom: 12px;
+}
+
+section .button {
+  margin: 16px 0;
+}
+
+section .button button {
+  outline: none;
+
+  padding: 8px 16px;
+
+  border-radius: 4px;
+
+  font-size: 25px;
+
+  font-weight: 400;
+
+  background: #4070f4;
+
+  color: #fff;
+
+  border: 2px solid transparent;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+}
+
+section .button button:hover {
+  border-color: #4070f4;
+
+  background-color: #fff;
+
+  color: #4070f4;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills {
+  background: #F0F8FF;
+}
+
+.skills .content {
+  padding: 40px 0;
+}
+
+.skills .skills-details {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.skills-details .text {
+  width: 50%;
+}
+
+.skills-details p {
+  color: #0E2431;
+
+  text-align: justify;
+}
+
+.skills .skills-details .experience {
+  display: flex;
+
+  align-items: center;
+
+  margin: 0 10px;
+}
+
+.skills-details .experience .num {
+  color: #0E2431;
+
+  font-size: 80px;
+}
+
+.skills-details .experience .exp {
+  color: #0E2431;
+
+  margin-left: 20px;
+
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+.skills-details .boxes {
+  width: 45%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+
+  margin: 20px 0;
+}
+
+.skills-details .boxes .topic {
+  font-size: 20px;
+
+  color: #4070f4;
+}
+
+.skills-details .boxes .per {
+  font-size: 60px;
+
+  color: #4070f4;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services .boxes {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.services .boxes .box {
+  margin: 20px 0;
+
+  width: calc(100% / 3 - 20px);
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  padding: 30px 10px;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+
+  cursor: default;
+
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+  background: #4070f4;
+
+  color: #fff;
+}
+
+.services .boxes .box .icon {
+  height: 50px;
+
+  width: 50px;
+
+  background: #4070f4;
+
+  border-radius: 50%;
+
+  text-align: center;
+
+  line-height: 50px;
+
+  font-size: 18px;
+
+  color: #fff;
+
+  margin: 0 auto 10px auto;
+
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .icon {
+  background-color: #fff;
+
+  color: #4070f4;
+}
+
+.services .boxes .box .topic {
+  font-size: 20px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.services .boxes .box p {
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+  background: #F0F8FF;
+}
+
+.contact .content {
+  margin: 0 auto;
+
+  padding: 30px 0;
+}
+
+.contact .text {
+  width: 80%;
+
+  text-align: center;
+
+  margin: auto;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  background: #4070f4;
+
+  padding: 15px 0;
+
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+  font-size: 17px;
+
+  font-weight: 400;
+
+  color: #fff;
+}
+
+footer .text span a {
+  font-weight: 500;
+
+  color: #fff;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   SCROLL TO TOP
+========================================================= */
+
+.scroll-button a {
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  color: #fff;
+
+  background: #4070f4;
+
+  padding: 7px 12px;
+
+  font-size: 18px;
+
+  border-radius: 6px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+  display: none;
+
+  z-index: 997;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1190px) {
+
+  section .content {
+    width: 85%;
+  }
+
+}
+
+
+/* =========================================================
+   1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .about .about-details {
+    justify-content: center;
+
+    flex-direction: column;
+  }
+
+  .about .about-details .left {
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .about-details .right {
+    width: 90%;
+
+    margin: 40px 0;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+
+    width: calc(100% / 2 - 20px);
+  }
+
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about .left img {
+    height: 350px;
+
+    width: 350px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 750px) {
+
+
+  /* =====================================================
+     NAVBAR
+  ===================================================== */
+
+  nav {
+    position: fixed !important;
+
+    top: 0 !important;
+
+    left: 0 !important;
+
+    width: 100% !important;
+
+    height: 65px !important;
+
+    padding: 0 !important;
+
+    background: #4070f4 !important;
+
+    z-index: 9999 !important;
+  }
+
+  nav.sticky {
+    background: #4070f4 !important;
+
+    padding: 0 !important;
+  }
+
+
+  nav .navbar {
+    width: 92% !important;
+
+    height: 65px !important;
+
+    margin: auto !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    position: relative !important;
+  }
+
+
+  /* =====================================================
+     PORTFOLIO LOGO
+  ===================================================== */
+
+  nav .navbar .logo {
+    position: absolute !important;
+
+    left: 0 !important;
+
+    top: 13px !important;
+
+    z-index: 10005 !important;
+  }
+
+  nav .navbar .logo a {
+    color: #fff !important;
+
+    font-size: 31px !important;
+
+    font-weight: 500 !important;
+
+    white-space: nowrap !important;
+  }
+
+
+  /* =====================================================
+     SOCIAL ICONS
+  ===================================================== */
+
+  nav .navbar .media-icons {
+    display: flex !important;
+
+    align-items: center !important;
+
+    position: absolute !important;
+
+    right: 42px !important;
+
+    top: 20px !important;
+
+    z-index: 10006 !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+  }
+
+  nav .navbar .media-icons a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: 21px !important;
+
+    height: 25px !important;
+
+    margin: 0 3px !important;
+
+    color: #fff !important;
+
+    font-size: 17px !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+  }
+
+
+  /* =====================================================
+     HAMBURGER
+  ===================================================== */
+
+  nav .menu-btn {
+    display: block !important;
+
+    position: absolute !important;
+
+    right: 0 !important;
+
+    top: 17px !important;
+
+    color: #fff !important;
+
+    font-size: 26px !important;
+
+    cursor: pointer !important;
+
+    z-index: 10008 !important;
+
+    line-height: 1 !important;
+  }
+
+
+  /* =====================================================
+     MOBILE DROPDOWN MENU
+  ===================================================== */
+
+  nav .navbar .menu {
+    position: absolute !important;
+
+    top: 65px !important;
+
+    right: -110% !important;
+
+    left: auto !important;
+
+    width: 72% !important;
+
+    max-width: 330px !important;
+
+    height: auto !important;
+
+    background: #0E2431 !important;
+
+    padding: 25px 0 30px 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    border-radius: 0 0 0 15px !important;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+
+    transition: right 0.35s ease !important;
+
+    z-index: 10007 !important;
+  }
+
+
+  /* OPEN MENU */
+
+  .navbar.active .menu {
+    right: 0 !important;
+
+    left: auto !important;
+  }
+
+
+  /* =====================================================
+     MENU ITEMS
+  ===================================================== */
+
+  nav .navbar .menu li {
+    list-style: none !important;
+
+    margin: 10px 0 !important;
+
+    width: 100% !important;
+
+    text-align: center !important;
+  }
+
+  nav .navbar .menu li a {
+    display: block !important;
+
+    color: #fff !important;
+
+    font-size: 21px !important;
+
+    padding: 7px 0 !important;
+
+    margin: 0 !important;
+  }
+
+  nav .navbar .menu li a:hover {
+    color: #4070f4 !important;
+  }
+
+
+  /* =====================================================
+     CLOSE BUTTON
+  ===================================================== */
+
+  nav .navbar .menu .cancel-btn {
+    display: block !important;
+
+    position: absolute !important;
+
+    top: 10px !important;
+
+    right: 20px !important;
+
+    color: #fff !important;
+
+    font-size: 21px !important;
+
+    cursor: pointer !important;
+  }
+
+
+  /* =====================================================
+     MOBILE HOME
+  ===================================================== */
+
+  .home {
+
+    height: 100vh !important;
+
+    min-height: 100vh !important;
+
+    width: 100% !important;
+
+    background-image: url("background.png") !important;
+
+    background-repeat: no-repeat !important;
+
+
+    /*
+      Keep the image at full height.
+      This prevents the image from being
+      stretched vertically.
+    */
+
+    background-size: auto 100% !important;
+
+
+    /*
+      IMPORTANT:
+
+      70% places the person on the
+      RIGHT SIDE of the screen.
+
+      More face + body remains visible.
+    */
+
+    background-position: 70% center !important;
+
+
+    background-attachment: scroll !important;
+
+    position: relative !important;
+  }
+
+
+  /* =====================================================
+     HOME CONTENT
+  ===================================================== */
+
+  .home .home-content {
+
+    width: 90% !important;
+
+    height: 100% !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    justify-content: flex-start !important;
+
+
+    /*
+      Navbar = 65px.
+      Start content well below navbar.
+    */
+
+    padding-top: 125px !important;
+
+
+    transform: none !important;
+
+    position: relative !important;
+
+    z-index: 5 !important;
+  }
+
+
+  /* =====================================================
+     HELLO
+  ===================================================== */
+
+  .home .text-one {
+
+    font-size: 21px !important;
+
+    line-height: 1.2 !important;
+
+    margin-bottom: 10px !important;
+
+    color: #0E2431 !important;
+  }
+
+
+  /* =====================================================
+     NAME
+  ===================================================== */
+
+  .home .text-two {
+
+    font-size: 48px !important;
+
+    line-height: 1.12 !important;
+
+    margin-left: 0 !important;
+
+    font-weight: 600 !important;
+
+    color: #0E2431 !important;
+
+    max-width: 55% !important;
+  }
+
+
+  /* =====================================================
+     JOB TITLE
+  ===================================================== */
+
+  .home .text-three {
+
+    font-size: 27px !important;
+
+    line-height: 1.2 !important;
+
+    margin: 10px 0 !important;
+
+    color: #4070f4 !important;
+
+    max-width: 60% !important;
+  }
+
+
+  /* =====================================================
+     LOCATION
+  ===================================================== */
+
+  .home .text-four {
+
+    font-size: 21px !important;
+
+    line-height: 1.3 !important;
+
+    margin: 5px 0 !important;
+
+    color: #0E2431 !important;
+  }
+
+
+  /* =====================================================
+     HIRE BUTTON
+  ===================================================== */
+
+  .home .button {
+
+    margin: 14px 0 !important;
+  }
+
+  .home .button button {
+
+    font-size: 20px !important;
+
+    padding: 8px 16px !important;
+  }
+
+
+  /* =====================================================
+     ABOUT
+  ===================================================== */
+
+  .about .about-details {
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+  }
+
+  .about .about-details .left {
+
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    margin-bottom: 30px !important;
+  }
+
+  .about .about-details .left img {
+
+    width: 100% !important;
+
+    max-width: 400px !important;
+
+    height: auto !important;
+  }
+
+  .about .about-details .right {
+
+    width: 100% !important;
+  }
+
+
+  /* =====================================================
+     SKILLS
+  ===================================================== */
+
+  .skills .skills-details {
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    flex-direction: column !important;
+  }
+
+  .skills-details .text {
+
+    width: 100% !important;
+
+    margin-bottom: 50px !important;
+  }
+
+  .skills-details .boxes {
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    width: 100% !important;
+  }
+
+  .skills-details .boxes .per {
+
+    font-size: 50px !important;
+  }
+
+
+  /* =====================================================
+     SERVICES
+  ===================================================== */
+
+  .services .boxes {
+
+    flex-direction: column !important;
+  }
+
+  .services .boxes .box {
+
+    margin: 20px 0 !important;
+
+    width: 100% !important;
+  }
+
+
+  /* =====================================================
+     CONTACT
+  ===================================================== */
+
+  .contact .text {
+
+    width: 100% !important;
+  }
+
+
+  /* =====================================================
+     GENERAL CONTENT
+  ===================================================== */
+
+  section .content {
+
+    width: 90% !important;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+
+  /* NAVBAR */
+
+  nav .navbar {
+
+    width: 92% !important;
+  }
+
+
+  /* LOGO */
+
+  nav .navbar .logo a {
+
+    font-size: 28px !important;
+  }
+
+
+  /* SOCIAL ICONS */
+
+  nav .navbar .media-icons {
+
+    right: 38px !important;
+
+    top: 21px !important;
+  }
+
+  nav .navbar .media-icons a {
+
+    width: 18px !important;
+
+    margin: 0 2px !important;
+
+    font-size: 15px !important;
+  }
+
+
+  /* HAMBURGER */
+
+  nav .menu-btn {
+
+    right: 0 !important;
+
+    top: 18px !important;
+
+    font-size: 24px !important;
+  }
+
+
+  /* BACKGROUND */
+
+  .home {
+
+    background-size: auto 100% !important;
+
+    background-position: 70% center !important;
+  }
+
+
+  /* CONTENT */
+
+  .home .home-content {
+
+    padding-top: 120px !important;
+  }
+
+
+  /* HELLO */
+
+  .home .text-one {
+
+    font-size: 19px !important;
+  }
+
+
+  /* NAME */
+
+  .home .text-two {
+
+    font-size: 42px !important;
+
+    max-width: 58% !important;
+  }
+
+
+  /* JOB */
+
+  .home .text-three {
+
+    font-size: 24px !important;
+
+    max-width: 63% !important;
+  }
+
+
+  /* LOCATION */
+
+  .home .text-four {
+
+    font-size: 19px !important;
+  }
+
+
+  /* BUTTON */
+
+  .home .button button {
+
+    font-size: 19px !important;
+  }
+
+}
