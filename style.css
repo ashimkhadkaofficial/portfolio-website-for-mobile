@@ -187,7 +187,7 @@ nav.sticky .menu-btn {
 
   background-size: cover;
 
-  background-position: 60% center;
+  background-position: center;
 
   background-attachment: fixed;
 
@@ -1002,7 +1002,7 @@ footer .text span a:hover {
       More face + body remains visible.
     */
 
- background-position: 63% center;
+    background-position: 70% center !important;
 
 
     background-attachment: scroll !important;
@@ -1299,12 +1299,12 @@ footer .text span a:hover {
 
 
   /* BACKGROUND */
-@media (max-width: 750px) {
+
   .home {
 
     background-size: auto 100% !important;
 
-    background-position: 60% center !important;
+    background-position: 70% center !important;
   }
 
 
